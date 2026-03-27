@@ -25,3 +25,38 @@ void printArray(T arr[], int size, int c_width = 5) {
     cout << endl;
 }
 
+
+
+//знаходження індексу максимального елемента масиву
+template <typename T>
+int indexMaxElement(T arr[], int size)
+{
+    T max = arr[0];
+    int index = 0;
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+
+        }
+
+    }
+    return index;
+
+}
+
+
+//знаходження індексу мінімального елемента масиву
+template <typename T>
+int indexMinElement(T arr[], int size)
+{
+    T min = arr[0];
+    int index = 0;
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+            index = i;
+        }
+    }
+    return index;
+}
