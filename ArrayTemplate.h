@@ -46,6 +46,31 @@ int indexMaxElement(T arr[], int size)
 }
 
 
+template <typename T>
+T sumArray(T arr[], int size)
+{
+    T sum = 0;
+    for (int i = 0; i < size; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+
+template <typename T>
+int search(T arr[], int size, T value)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] == value) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
 //знаходження індексу мінімального елемента масиву
 template <typename T>
 int indexMinElement(T arr[], int size)
