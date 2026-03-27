@@ -3,4 +3,5 @@ project(P53_T07_ArrayTemplate)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(P53_T07_ArrayTemplate main.cpp)
+add_executable(P53_T07_ArrayTemplate main.cpp
+        ArrayTemplate.h)
